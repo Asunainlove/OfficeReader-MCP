@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "description": "OfficeReader-MCP Settings - Configure document format detection and processing",
+  "autoDetectFormats": true,
+  "enabledFormats": {
+    "word": {
+      "enabled": true,
+      "extensions": [".docx", ".doc"],
+      "description": "Microsoft Word documents"
+    },
+    "excel": {
+      "enabled": true,
+      "extensions": [".xlsx", ".xls"],
+      "description": "Microsoft Excel spreadsheets"
+    },
+    "powerpoint": {
+      "enabled": true,
+      "extensions": [".pptx", ".ppt"],
+      "description": "Microsoft PowerPoint presentations"
+    }
+  },
+  "imageOptimization": {
+    "enabled": true,
+    "format": "webp",
+    "maxWidth": 1920,
+    "maxHeight": 1080,
+    "quality": 80,
+    "description": "Automatically optimize extracted images for better performance"
+  },
+  "conversionOptions": {
+    "extractImages": true,
+    "imageFormat": "file",
+    "preserveFormatting": true,
+    "includeMetadata": true
+  },
+  "customFormats": [],
+  "notes": [
+    "This file configures which document formats Claude Code should use MCP for recognition",
+    "autoDetectFormats: When true, automatically detects and uses MCP for supported formats",
+    "customFormats: Array of custom file extensions to handle (requires implementation)",
+    "Modify this file using: console.bat (Windows) or ./console.sh (Linux/macOS)"
+  ]
+}

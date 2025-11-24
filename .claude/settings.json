@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "officereader": {
+      "command": "python",
+      "args": [
+        "-m",
+        "officereader_mcp.server"
+      ],
+      "cwd": "..\\src",
+      "env": {
+        "OFFICEREADER_CACHE_DIR": "..\\cache"
+      }
+    }
+  }
+}

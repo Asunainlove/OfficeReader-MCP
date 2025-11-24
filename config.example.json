@@ -1,0 +1,14 @@
+{
+  "comment": "OfficeReader-MCP Configuration File",
+  "cache_dir": "cache",
+  "output_dir": null,
+  "image_optimization": {
+    "enabled": true,
+    "max_dimension": 1920,
+    "quality": 80
+  },
+  "default_settings": {
+    "extract_images": true,
+    "image_format": "file"
+  }
+}
