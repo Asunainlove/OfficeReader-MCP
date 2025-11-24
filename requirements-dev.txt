@@ -1,0 +1,16 @@
+# Development dependencies for OfficeReader-MCP
+# Install with: pip install -r requirements-dev.txt
+
+# Include all production dependencies
+-r requirements.txt
+
+# Testing
+pytest>=7.0.0
+
+# Code formatting and linting
+black>=23.0.0
+ruff>=0.1.0
+
+# Build and distribution
+build>=1.0.0
+twine>=4.0.0

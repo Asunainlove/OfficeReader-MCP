@@ -1,6 +1,6 @@
 @echo off
 REM OfficeReader-MCP Launcher
-REM This script starts the Word document MCP server
+REM This script starts the OfficeReader MCP server
 
 cd /d "%~dp0.."
-python -m src.officereader_mcp
+python -m officereader_mcp.server

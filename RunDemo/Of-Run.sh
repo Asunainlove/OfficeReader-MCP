@@ -1,6 +1,6 @@
 #!/bin/bash
 # OfficeReader-MCP Launcher
-# This script starts the Word document MCP server
+# This script starts the OfficeReader MCP server
 
 cd "$(dirname "$0")/.."
-python -m src.officereader_mcp
+python -m officereader_mcp.server

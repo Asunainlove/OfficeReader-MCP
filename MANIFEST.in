@@ -1,0 +1,33 @@
+# Include documentation and configuration files
+include README.md
+include README-CN.md
+include LICENSE
+include QUICKSTART.md
+include CONFIG.md
+include CHANGES_SUMMARY.md
+include config.example.json
+include pyproject.toml
+
+# Include test files
+recursive-include test *.py
+
+# Exclude cache and build artifacts
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .DS_Store
+global-exclude *.swp
+global-exclude *~
+
+# Exclude development and IDE files
+exclude .gitignore
+exclude .git
+prune .git
+prune .vscode
+prune .idea
+prune .claude
+
+# Exclude cache directories
+prune cache
+prune dist
+prune build
+prune *.egg-info
